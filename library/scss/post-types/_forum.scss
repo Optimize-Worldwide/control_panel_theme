@@ -1,0 +1,31 @@
+article.forum,
+article.topic,
+article.bp_members,
+article.bp_activity {
+	@include card;
+	background: white;
+	margin-top: $gutter;
+	padding: $gutter;
+	header.article-header {
+		float: left;
+	}
+	.entry-content {
+		padding: 0;
+	}
+	#subscription-toggle {
+		float: right;
+	}
+}
+
+#bbpress-forums,
+#bbpress-forums ul.bbp-lead-topic,
+#bbpress-forums ul.bbp-topics,
+#bbpress-forums ul.bbp-forums,
+#bbpress-forums ul.bbp-replies,
+#bbpress-forums ul.bbp-search-results {
+	font-size: 1rem;
+}
+
+.bbp-template-notice {
+	display: none;
+}

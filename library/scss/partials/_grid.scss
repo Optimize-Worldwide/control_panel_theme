@@ -1,0 +1,188 @@
+@mixin grid-col {
+	float: left;
+	//margin-right: #{$gutter};
+
+}
+
+.last-col {
+	float: right;
+	padding-right: 0 !important;
+}
+
+@media (max-width: #{$tablet-breakpoint - 1px}) {
+	.m-all {
+		@include grid-col;
+		width: 100%;
+		padding-right: 0;
+	}
+	.m-none {
+		display: none;
+	}
+	.m-1of2 {
+		@include grid-col;
+		width: calc(50% - 1rem);
+	}
+	.m-1of3 {
+		@include grid-col;
+		width: calc(33.33% - 1rem);
+	}
+	.m-2of3 {
+		@include grid-col;
+		width: calc(66.66% - 1rem);
+	}
+	.m-1of4 {
+		@include grid-col;
+		width: calc(25% - 1rem);
+	}
+	.m-3of4 {
+		@include grid-col;
+		width: calc(75% - 1rem);
+	}
+
+} // end mobile styles
+
+
+@media (min-width: $tablet-breakpoint) and (max-width: #{$desktop-breakpoint - 1px}) {
+	.t-all {
+		@include grid-col;
+		width: 100%;
+		padding-right: 0;
+	}
+	.t-none {
+		display: none;
+	}
+	.t-1of2 {
+		@include grid-col;
+		width: calc(50% - 1rem);
+	}
+	.t-1of3 {
+		@include grid-col;
+		width: calc(33.33% - 1rem);
+	}
+	.t-2of3 {
+		@include grid-col;
+		width: calc(66.66% - 1rem);
+	}
+	.t-1of4 {
+		@include grid-col;
+		width: calc(25% - 1rem);
+	}
+	.t-3of4 {
+		@include grid-col;
+		width: calc(75% - 1rem);
+	}
+	.t-1of5 {
+		@include grid-col;
+		width: calc(20% - 1rem);
+	}
+	.t-2of5 {
+		@include grid-col;
+		width: calc(40% - 1rem);
+	}
+	.t-3of5 {
+		@include grid-col;
+		width: calc(60% - 1rem);
+	}
+	.t-4of5 {
+		@include grid-col;
+		width: calc(80% - 1rem);
+	}
+
+} // end tablet
+
+/* Landscape to small desktop */
+@media (min-width: $desktop-breakpoint) {
+	.d-all  {
+		@include grid-col;
+		width: 100%;
+		padding-right: 0;
+	}
+	.d-none {
+		display: none;
+	}
+	.d-1of2 {
+		@include grid-col;
+		width: calc(50% - 1rem);
+	}
+	.d-1of3 {
+		@include grid-col;
+		width: calc(33.33% - 1rem);
+	}
+	.d-2of3 {
+		@include grid-col;
+		width: calc(66.66% - 1rem);
+	}
+	.d-1of4 {
+		@include grid-col;
+		width: calc(25% - 1rem);
+	}
+	.d-3of4 {
+		@include grid-col;
+		width: calc(75% - 1rem);
+	}
+	.d-1of5 {
+		@include grid-col;
+		width: calc(20% - 1rem);
+	}
+	.d-2of5 {
+		@include grid-col;
+		width: calc(40% - 1rem);
+	}
+	.d-3of5 {
+		@include grid-col;
+		width: calc(60% - 1rem);
+	}
+	.d-4of5 {
+		@include grid-col;
+		width: calc(80% - 1rem);
+	}
+	.d-1of6 {
+		@include grid-col;
+		width: calc(16.6666666667% - 1rem);
+	}
+	.d-1of7 {
+		@include grid-col;
+		width: calc(14.2857142857% - 1rem);
+	}
+	.d-2of7 {
+		@include grid-col;
+		width: calc(28.5714286% - 1rem);
+	}
+	.d-3of7 {
+		@include grid-col;
+		width: calc(42.8571429% - 1rem);
+	}
+	.d-4of7 {
+		@include grid-col;
+		width: calc(57.1428572% - 1rem);
+	}
+	.d-5of7 {
+		@include grid-col;
+		width: calc(71.4285715% - 1rem);
+	}
+	.d-6of7 {
+		@include grid-col;
+		width: calc(85.7142857% - 1rem);
+	}
+	.d-1of8 {
+		@include grid-col;
+		width: calc(12.5% - 1rem);
+	}
+	.d-1of9 {
+		@include grid-col;
+		width: calc(11.1111111111% - 1rem);
+	}
+	.d-1of10 {
+		@include grid-col;
+		width: calc(10% - 1rem);
+	}
+	.d-1of11 {
+		@include grid-col;
+		width: calc(9.09090909091% - 1rem);
+	}
+	.d-1of12 {
+		@include grid-col;
+		width: calc(8.33% - 1rem);
+	}
+
+} // end desktop styles

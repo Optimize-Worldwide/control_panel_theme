@@ -1,0 +1,41 @@
+
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+$black:             #181920;
+$dark-gray:         #57585a;
+$white:             #fff;
+$white: #F1F5F2;
+
+$light-gray:        #f8f9fa;
+$gray:              #eaedf2;
+$text-color:        $black;
+$meta-gray:         #9fa6b4;
+
+$green:             #7dd667;
+
+$bones-pink:        #f01d4f;
+$blue:              #01acf0;
+$dark-blue:         #003462;
+
+$link-color:        $dark-blue;
+$link-hover:        darken($link-color, 9%);
+
+$border-color:      #ccc;
+$disabled-gray:     #cfcfcf;
+
+$gutter:            1rem;
+
+$light-direction:   145deg;
+
+$icon-opacity:      0.5;
+
+$phone-breakpoint: 481px;
+
+$tablet-breakpoint: 768px;
+
+$desktop-breakpoint: 1030px;
+
+$tv-breakpoint: 1240px;
+

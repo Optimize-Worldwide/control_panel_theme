@@ -1,0 +1,121 @@
+.single-client {
+	.filter-list {
+		padding-top: 6rem;
+		padding-left: 0;
+		@media only screen and (min-width: $tablet-breakpoint){
+			padding-left: 1rem;
+		}
+	}
+	#content {
+		z-index: 0;
+		position: relative;
+		overflow-x: hidden;
+		&:before {
+			// Background googlemap
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			background-position: center center;
+			background-size: 100% auto;
+			background-attachment: fixed;
+			backface-visibility: none;
+			opacity: 0.5;
+		}
+	}
+}
+
+
+.post-type-archive-client {
+	.client {
+		padding: $gutter #{$gutter * 1.5};
+		box-sizing: border-box;
+		position: relative;
+		background-position: center center;
+		background-size: cover;
+		background-color: rgb(252,252,252);
+		transition: 0.5s all;
+		&:after {
+			background: transparent;
+		}
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			opacity: 0;
+			background: white;
+			transition: 0.5s opacity;
+		}
+		header.article-header {
+			padding-bottom: 0;
+			a {
+				transition: 0.5s color;
+				color: $black;
+			}
+			h2 {
+				margin-bottom: $gutter;
+			}
+		}
+		.entry-content {
+			padding: 0;
+			transition: 0.5s max-height;
+		}
+		&:hover {
+			z-index: 9;
+			height: auto;
+			background: white;
+			@include raised;
+			header.article-header a {
+				border-bottom: 1px dotted $text-color;
+			}
+			&:before {
+				opacity: 0.8;
+			}
+		}
+		.email,
+		.phone {
+			margin-left: 0;
+		}
+		h3,
+		h4 {
+			float: left;
+			width: 100%;
+			margin: 0.5em 0 0 0;
+		}
+		.websites {
+			margin-top: 0;
+		}
+		.address {
+			margin-bottom: 0.5rem;
+		}
+		.websites,
+		.email,
+		.phone,
+		.address,
+		.notes {
+			float: left;
+			width: 100%;
+			margin-top: 0;
+		}
+		.email-address {
+			.label {
+				text-align: left;
+			}
+		}
+		.address {
+			.label {
+				width: 100%;
+				text-align: left;
+			}
+		}
+	}
+}

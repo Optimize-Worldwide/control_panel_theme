@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+	<defs>
+		<rect width="8" height="8" rx="1" ry="1" id="rect_1s">
+			<animate id="animation1" attributeName="opacity" from="0" to="0.2" dur="2s" begin="0s;animation2.end" />
+			<animate id="animation2" attributeName="opacity" from="0.2" to="0" dur="2s" begin="animation1.end" />
+		</rect>
+		<rect width="8" height="8" rx="1" ry="1" id="rect_halfs">
+			<animate id="animation3" attributeName="opacity" from="0" to="0.2" dur="2.5s" begin="0s;animation4.end" />
+			<animate id="animation4" attributeName="opacity" from="0.2" to="0" dur="2.5s" begin="animation3.end" />
+		</rect>
+		<rect width="8" height="8" rx="1" ry="1" id="rect_2s">
+			<animate id="animation5" attributeName="opacity" from="0" to="0.2" dur="3s" begin="0s;animation6.end" />
+			<animate id="animation6" attributeName="opacity" from="0.2" to="0" dur="3s" begin="animation5.end" />
+		</rect>
+		<rect width="8" height="8" rx="1" ry="1" id="rect_3s">
+			<animate id="animation7" attributeName="opacity" from="0" to="0.2" dur="4s" begin="0s;animation8.end" />
+			<animate id="animation8" attributeName="opacity" from="0.2" to="0" dur="4s" begin="animation7.end" />
+		</rect>
+		<rect width="8" height="8" rx="1" ry="1" id="rect_2halfs">
+			<animate id="animation9" attributeName="opacity" from="0" to="0.2" dur="3.5s" begin="0s;animation10.end" />
+			<animate id="animation10" attributeName="opacity" from="0.2" to="0" dur="3.5s" begin="animation9.end" />
+		</rect>
+
+		<rect width="2" height="64" id="vertical_line" fill-opacity="0.1"></rect>
+		<rect width="64" height="2" id="horizontal_line" fill-opacity="0.1"></rect>
+
+	</defs>
+	<!-- <rect width="64" height="64" fill="red" fill-opacity="0.5"></rect> -->
+	<use xlink:href="#vertical_line" transform="translate(-1,0)"></use>
+	<use xlink:href="#vertical_line" transform="translate(7,0)"></use>
+	<use xlink:href="#vertical_line" transform="translate(15,0)"></use>
+	<use xlink:href="#vertical_line" transform="translate(23,0)"></use>
+	<use xlink:href="#vertical_line" transform="translate(31,0)"></use>
+	<use xlink:href="#vertical_line" transform="translate(39,0)"></use>
+	<use xlink:href="#vertical_line" transform="translate(47,0)"></use>
+	<use xlink:href="#vertical_line" transform="translate(55,0)"></use>
+	<use xlink:href="#vertical_line" transform="translate(63,0)"></use>
+
+
+	<use xlink:href="#horizontal_line" transform="translate(0,-1)"></use>
+	<use xlink:href="#horizontal_line" transform="translate(0,7)"></use>
+	<use xlink:href="#horizontal_line" transform="translate(0,15)"></use>
+	<use xlink:href="#horizontal_line" transform="translate(0,23)"></use>
+	<use xlink:href="#horizontal_line" transform="translate(0,31)"></use>
+	<use xlink:href="#horizontal_line" transform="translate(0,39)"></use>
+	<use xlink:href="#horizontal_line" transform="translate(0,47)"></use>
+	<use xlink:href="#horizontal_line" transform="translate(0,55)"></use>
+	<use xlink:href="#horizontal_line" transform="translate(0,63)"></use>
+
+
+	<use xlink:href="#rect_1s"></use>
+	<use xlink:href="#rect_1s" transform="translate(8,8)" fill="white"></use>
+	<use xlink:href="#rect_1s" transform="translate(48,16)"></use>
+	<use xlink:href="#rect_1s" transform="translate(8,48)" fill="white"></use>
+	<use xlink:href="#rect_1s" transform="translate(70,48)"></use>
+	<use xlink:href="#rect_1s" transform="translate(32,64)" fill="white"></use>
+	<use xlink:href="#rect_1s" transform="translate(24,56)"></use>
+	<use xlink:href="#rect_1s" transform="translate(58,24)" fill="white"></use>
+	<use xlink:href="#rect_1s" transform="translate(32,32)"></use>
+
+	<use xlink:href="#rect_halfs" transform="translate(8,0)" fill="white"></use>
+	<use xlink:href="#rect_halfs" transform="translate(0,16)"></use>
+	<use xlink:href="#rect_halfs" transform="translate(32,16)" fill="white"></use>
+	<use xlink:href="#rect_halfs" transform="translate(48,48)"></use>
+	<use xlink:href="#rect_halfs" transform="translate(64,32)" fill="white"></use>
+	<use xlink:href="#rect_halfs" transform="translate(56,24)"></use>
+	<use xlink:href="#rect_halfs" transform="translate(16,24)" fill="white"></use>
+	<use xlink:href="#rect_halfs" transform="translate(48,24)"></use>
+	<use xlink:href="#rect_halfs" transform="translate(48,0)" fill="white"></use>
+	<use xlink:href="#rect_halfs" transform="translate(40,40)"></use>
+	<use xlink:href="#rect_halfs" transform="translate(40,16)"></use>
+	<use xlink:href="#rect_halfs" transform="translate(32,56)"></use>
+	<use xlink:href="#rect_halfs" transform="translate(40,16)"></use>
+	<use xlink:href="#rect_halfs" transform="translate(40,16)"></use>
+
+
+	<use xlink:href="#rect_2s" transform="translate(0,8)"></use>
+	<use xlink:href="#rect_2s" transform="translate(32,48)" fill="white"></use>
+	<use xlink:href="#rect_2s" transform="translate(48,64)"></use>
+	<use xlink:href="#rect_2s" transform="translate(24,32)" fill="white"></use>
+	<use xlink:href="#rect_2s" transform="translate(0,24)"></use>
+	<use xlink:href="#rect_2s" transform="translate(0,56)" fill="white"></use>
+	<use xlink:href="#rect_2s" transform="translate(64,0)"></use>
+	<use xlink:href="#rect_2s" transform="translate(24,56)" fill="white"></use>
+	<use xlink:href="#rect_2s" transform="translate(32,8)"></use>
+	<use xlink:href="#rect_2s" transform="translate(16,32)"></use>
+	<use xlink:href="#rect_2s" transform="translate(56,56)"></use>
+
+	<use xlink:href="#rect_2halfs" transform="translate(0,40)"></use>
+	<use xlink:href="#rect_2halfs" transform="translate(8,32)" fill="white"></use>
+	<use xlink:href="#rect_2halfs" transform="translate(56,40)"></use>
+	<use xlink:href="#rect_2halfs" transform="translate(0,32)" fill="white"></use>
+	<use xlink:href="#rect_2halfs" transform="translate(24,56)"></use>
+	<use xlink:href="#rect_2halfs" transform="translate(24,56)" fill="white"></use>
+	<use xlink:href="#rect_2halfs" transform="translate(24,56)"></use>
+	<use xlink:href="#rect_2halfs" transform="translate(24,56)" fill="white"></use>
+	<use xlink:href="#rect_2halfs" transform="translate(24,16)" fill="white"></use>
+
+	<use xlink:href="#rect_3s" transform="translate(24,0)"></use>
+	<use xlink:href="#rect_3s" transform="translate(56,0)" fill="white"></use>
+	<use xlink:href="#rect_3s" transform="translate(0,48)"></use>
+	<use xlink:href="#rect_3s" transform="translate(24,48)" fill="white"></use>
+	<use xlink:href="#rect_3s" transform="translate(32,24)"></use>
+	<use xlink:href="#rect_3s" transform="translate(56,32)" fill="white"></use>
+	<use xlink:href="#rect_3s" transform="translate(40,48)"></use>
+	<use xlink:href="#rect_3s" transform="translate(40,64)" fill="white"></use>
+	<use xlink:href="#rect_3s" transform="translate(16,40)"></use>
+	<use xlink:href="#rect_3s" transform="translate(64,40)" fill="white"></use>
+	<use xlink:href="#rect_3s" transform="translate(0,32)"></use>
+	<use xlink:href="#rect_3s" transform="translate(56,8)"></use>
+	<use xlink:href="#rect_3s" transform="translate(0,48)" fill="white"></use>
+
+</svg>

@@ -1,0 +1,39 @@
+/*481px and Up Stylesheet*/
+
+.wrap {
+	padding: 0;
+}
+
+#container>header {
+	nav {
+		width: 100%;
+		#menu-main-navigation {
+			width: 100%;
+			li {
+				float: left;
+				padding: 1rem 1rem 1rem 0;
+			}
+		}
+	}
+}
+
+.entry-content {
+	.alignleft, img.alignleft {
+		margin-right: 1.5em;
+		display: inline;
+		float: left;
+	}
+	.alignright, img.alignright {
+		margin-left: 1.5em;
+		display: inline;
+		float: right;
+	}
+	.aligncenter, img.aligncenter {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		clear: both;
+	}
+}
+
+

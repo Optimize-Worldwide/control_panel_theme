@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<defs>
+	<rect width="1" height="32" id="vertical_line" fill-opacity="0.05"></rect>
+	<rect width="32" height="1" id="horizontal_line" fill-opacity="0.05"></rect>
+</defs>
+<use xlink:href="#vertical_line" transform="translate(3.5,0)"></use>
+<use xlink:href="#vertical_line" transform="translate(11.5,0)"></use>
+<use xlink:href="#vertical_line" transform="translate(19.5,0)"></use>
+<use xlink:href="#vertical_line" transform="translate(27.5,0)"></use>
+
+<use xlink:href="#horizontal_line" transform="translate(0,3.5)"></use>
+<use xlink:href="#horizontal_line" transform="translate(0,11.5)"></use>
+<use xlink:href="#horizontal_line" transform="translate(0,19.5)"></use>
+<use xlink:href="#horizontal_line" transform="translate(0,27.5)"></use>
+
+<circle cx="12" cy="4" fill-opacity="0.2">
+	<animate id="animation1" attributeName="r" from="1.2" to="2" dur="2s" begin="0s;animation2.end" />
+	<animate id="animation2" attributeName="r" from="2" to="1.2" dur="3s" begin="animation1.end" />
+</circle>
+<circle cx="20" cy="4" fill-opacity="0.3">
+	<animate id="animation3" attributeName="r" from="0" to="1" dur="2s" begin="0s;animation4.end" />
+	<animate id="animation4" attributeName="r" from="1" to="0" dur="2s" begin="animation3.end" />
+</circle>
+<circle cx="28" cy="4" fill-opacity="0.2">
+	<animate id="animation5" attributeName="r" from="0" to="2" dur="3s" begin="0s;animation6.end" />
+	<animate id="animation6" attributeName="r" from="2" to="0" dur="2s" begin="animation5.end" />
+</circle>
+<circle cx="4" cy="4" fill-opacity="0.2">
+	<animate id="animation7" attributeName="r" from="0" to="2" dur="3s" begin="0s;animation8.end" />
+	<animate id="animation8" attributeName="r" from="2" to="0" dur="2s" begin="animation7.end" />
+</circle>
+<circle cx="12" cy="12" fill-opacity="0.2">
+	<animate id="animation9" attributeName="r" from="1.2" to="2" dur="2s" begin="0s;animation10.end" />
+	<animate id="animation10" attributeName="r" from="2" to="1.2" dur="2s" begin="animation9.end" />
+</circle>
+<circle cx="20" cy="12" fill-opacity="0.2">
+	<animate id="animation11" attributeName="r" from="0" to="2" dur="3s" begin="0s;animation12.end" />
+	<animate id="animation12" attributeName="r" from="2" to="0" dur="2s" begin="animation11.end" />
+</circle>
+<circle cx="28" cy="12" fill-opacity="0.3">
+	<animate id="animation13" attributeName="r" from="0" to="1" dur="2s" begin="0s;animation14.end" />
+	<animate id="animation14" attributeName="r" from="1" to="0" dur="2s" begin="animation13.end" />
+</circle>
+<circle cx="4" cy="12" fill-opacity="0.2">
+	<animate id="animation15" attributeName="r" from="1.2" to="2" dur="3s" begin="0s;animation16.end" />
+	<animate id="animation16" attributeName="r" from="2" to="1.2" dur="2s" begin="animation15.end" />
+</circle>
+<circle cx="12" cy="20" fill-opacity="0.2">
+	<animate id="animation17" attributeName="r" from="0" to="2" dur="2s" begin="0s;animation18.end" />
+	<animate id="animation18" attributeName="r" from="2" to="0" dur="3s" begin="animation17.end" />
+</circle>
+<circle cx="20" cy="20" fill-opacity="0.2">
+	<animate id="animation19" attributeName="r" from="0" to="2" dur="2s" begin="0s;animation20.end" />
+	<animate id="animation20" attributeName="r" from="2" to="0" dur="2s" begin="animation19.end" />
+</circle>
+<circle cx="28" cy="20" fill-opacity="0.2">
+	<animate id="animation21" attributeName="r" from="0" to="2" dur="3s" begin="0s;animation22.end" />
+	<animate id="animation22" attributeName="r" from="2" to="0" dur="2s" begin="animation21.end" />
+</circle>
+<circle cx="4" cy="20" fill-opacity="0.2">
+	<animate id="animation23" attributeName="r" from="1.2" to="2" dur="2s" begin="0s;animation24.end" />
+	<animate id="animation24" attributeName="r" from="2" to="1.2" dur="2s" begin="animation23.end" />
+</circle>
+<circle cx="12" cy="28" fill-opacity="0.3">
+	<animate id="animation25" attributeName="r" from="0" to="1" dur="2s" begin="0s;animation26.end" />
+	<animate id="animation26" attributeName="r" from="1" to="0" dur="3s" begin="animation25.end" />
+</circle>
+<circle cx="20" cy="28" fill-opacity="0.2">
+	<animate id="animation27" attributeName="r" from="0" to="2" dur="2s" begin="0s;animation28.end" />
+	<animate id="animation28" attributeName="r" from="2" to="0" dur="2s" begin="animation27.end" />
+</circle>
+<circle cx="28" cy="28" fill-opacity="0.2">
+	<animate id="animation29" attributeName="r" from="0" to="2" dur="2s" begin="0s;animation30.end" />
+	<animate id="animation30" attributeName="r" from="2" to="0" dur="3s" begin="animation29.end" />
+</circle>
+<circle cx="4" cy="28" fill-opacity="0.2">
+	<animate id="animation31" attributeName="r" from="0" to="2" dur="2s" begin="0s;animation32.end" />
+	<animate id="animation32" attributeName="r" from="2" to="0" dur="2s" begin="animation31.end" />
+</circle>
+</svg>

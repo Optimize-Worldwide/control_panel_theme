@@ -1,0 +1,39 @@
+%btn {
+	display: inline-block;
+	position: relative;
+	font-family: $sans-serif;
+	text-decoration: none;
+	color: $white;
+	font-size: 0.9em;
+	line-height: 2;
+	padding: 0 0.5rem;
+	border-radius: 2px;
+	font-weight: normal;
+	border: 0;
+	cursor: pointer;
+	@include transition(background-color 0.14s ease-in-out);
+
+	&:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+	}
+
+	&:active {
+		top: 1px;
+	}
+}
+
+.blue-btn {
+	@extend %btn;
+	background-color: $blue;
+
+	&:hover,
+	&:focus {
+		background-color: darken($blue, 4%);
+	}
+
+	&:active {
+		background-color: darken($blue, 5%);
+	}
+
+}

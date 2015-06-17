@@ -1,0 +1,102 @@
+User:
+[time_stamps] => array(
+	[${client_id}] => array(
+		[$site_id] => array(
+			['task_name'] => array(
+				'1417023509',
+				'1417023518'
+			)
+		)
+	)
+)
+
+Site:
+[_tasks] => array(
+	['task_name'] => array(
+		'1417023509' => '12',
+		'1417023518' => '12'
+	)
+)
+
+
+
+function billable_stamp_ajax(){
+	$user = $_POST['user'];
+	$type = $_POST['type'];
+	$site = $_POST['id'];
+	$stamped_task = $_POST['task'];
+
+	$stamps['user'] = get_user_meta($user,'time_stamps');
+	$stamps['site'] = get_post_meta($site,'_tasks');
+
+	$client = get_post_meta($site,'_associated_client');
+
+	$stamps['user'][$client][$site][$name][] = time();
+	$stamps['site'][$name][] = array(time() => $user);
+
+	update_user_meta($user,'time_stamps',$stamps['user']);
+	update_site_meta($site,'_tasks',$stamps['site']);
+
+	die();
+
+}
+add_action('wp_ajax_billable_stamp','billable_stamp_ajax');
+
+function billable_create() {
+	$site = $_POST['id'];
+	$task = $_POST['task'];
+
+	$tasks = get_post_meta($site,'_tasks');
+
+	$tasks[$task] = array();
+
+	die();
+}
+add_action('wp_ajax_billable_create','billable_create_ajax');
+
+
+
+$('#work_done .task button').click(function(event){
+	var task = $(this).parents('.task').find('h3').innerHTML;
+	$.ajax({
+		type: "POST",
+		url: ajaxurl,
+		data: "action=billable_stamp&user="+<?php echo $user_id; ?>+"&id="+<?php echo $post->ID; ?>+"&task="+task;
+	});
+});
+
+$('#work_done .create-task').click(function(event){
+	var name = prompt('Enter task name');
+	$.ajax({
+		type: "POST",
+		url: ajaxurl,
+		data: "action=billable_create&id="+<?php echo $post->ID; ?>+"&task="+name;
+		complete: function(msg){
+			console.log(msg);
+
+		}
+	});
+});
+
+
+
+
+$stamps = get_post_meta($post->ID,'_tasks');
+
+<section id="work_done" class="card,etc">
+<?php if($stamps):?>
+	<ul>
+	<?php foreach($stamps as $task_name => $task_stamps): ?>
+		<li class="task">
+			<h3><?php echo $task_name; ?></h3>
+			<ul><?php foreach($task_stamps as $stamp => $user):?>
+				<li><?php echo $stamp." by ".$user; ?></li>
+			<?php endforeach; ?></ul>
+			<button>Stamp</button>
+		</li>
+	<?php endforeach; ?>
+	</ul>
+<?php endif; ?>
+<?php foreach($stamps as $tasks): ?>
+<button class="create-task">Create Task</button>
+</section>

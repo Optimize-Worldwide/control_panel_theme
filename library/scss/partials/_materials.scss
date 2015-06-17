@@ -1,0 +1,79 @@
+.card {
+	@include card;
+	border-radius: 2px;
+	background: $white;
+	padding: $gutter #{$gutter * 1.5};
+	transition: 0.3s box-shadow cubic-bezier(.3, 0, 0, 1.3),0.3s transform cubic-bezier(.3, 0, 0, 1.3);
+	position: relative;
+	margin-bottom: $gutter;
+	@include box-shadow;
+	&:after,
+	&:before {
+		position: absolute;
+		bottom: 0;
+		margin: auto;
+		right: 0;
+		content: "";
+		display: block;
+		background: rgba(0,0,0,0.1);
+		z-index: 9999999;
+		display: none;
+	}
+	&:after {
+		width: 1px;
+		height: 100%;
+	}
+	&:before {
+		width: 100%;
+		height: 1px;
+	}
+
+
+	&:hover{
+		@include raised;
+		z-index: 99;
+		// box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+	}
+	&:active {
+		// @include inset;
+	}
+
+	.filter-list & {
+		&:hover{
+			@include raised;
+		}
+		&:active {
+			// @include inset;
+		}
+	}
+
+	.exit-card-link {
+		display: none;
+		content: "X";
+		position: absolute;
+		right: 0px;
+		top: 0;
+		width: 1rem;
+		height: 1rem;
+		color: black;
+	}
+	.card-link {
+		display: block;
+		content: "#";
+		position: absolute;
+		right: 0px;
+		top: 0;
+		width: 1rem;
+		height: 1rem;
+		color: black;
+	}
+	&:target {
+		border: 0.5rem dotted $black;
+		.exit-card-link {
+			display: block;
+		}
+		.card-link {
+			display: none;
+		}
+	}
+}

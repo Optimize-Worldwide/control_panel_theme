@@ -1,0 +1,51 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: IE Stylesheet
+
+So instead of using the respond.js file to add media query support
+to IE, we're going to use SASS to create an easily readable css file.
+Here, we import all the styles the standard stylesheet gets, only
+without the media queries. No need to worry about editing anything!
+
+******************************************************************//******************************************************************
+IMPORTS & DEPENDENCIES
+Remember, all the BASE styles are called already since IE can
+read those. Below, we need to import only the stuff IE can't
+understand (what's inside the media queries). We also need to
+import the mixins file so SASS can understand the variables.
+******************************************************************//******************************************************************
+Site Name:
+Author:
+
+Stylesheet: IE Grid Styles
+
+Since the example grid is based on media queries, so rather than
+setup some js library that would make IE8 and below understand
+media queries, let's just add some styles that serves a fixed grid.
+
+Again, if you want to roll your own, just remove this junk and put
+whatever you use in here.
+
+******************************************************************//*481px and Up Stylesheet*//*Tablet & Small Desktop Stylesheet*//*
+you can call the larger styles if you want, but there's really no need
+*//******************************************************************
+ADDITIONAL IE FIXES
+These fixes are now ONLY seen by IE, so you don't have to worry
+about using prefixes, although it's best practice. For more info
+on using Modernizr classes, check out this link:
+http://www.modernizr.com/docs/
+******************************************************************//*
+For example, you can use something like:
+
+.no-textshadow .class { ... }
+
+You can also target specific versions by using the classes applied to
+the html element. These can sometimes change, so take a look inside the
+header.php file to see what they are:
+
+
+.lt-ie8 .class { ... }
+
+*//*Desktop Stylesheet*/p{-ms-word-break:break-all;-ms-word-wrap:break-all;word-break:break-word;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;-webkit-hyphenate-before:2;-webkit-hyphenate-after:3;hyphenate-lines:3;-webkit-font-feature-settings:"liga", "dlig";-moz-font-feature-settings:"liga=1, dlig=1";-ms-font-feature-settings:"liga", "dlig";-o-font-feature-settings:"liga", "dlig";font-feature-settings:"liga", "dlig";}code{font-family:"Ubuntu Mono", monospace;}@font-face{font-family:'control_panel';src:url('../font/control_panel.eot?38598288');src:url('../font/control_panel.eot?38598288#iefix') format('embedded-opentype'), url('../font/control_panel.woff?38598288') format('woff'), url('../font/control_panel.ttf?38598288') format('truetype'), url('../font/control_panel.svg?38598288#control_panel') format('svg');font-weight:normal;font-style:normal;}@media screen and (-webkit-min-device-pixel-ratio:0){@font-face{font-family:'control_panel';src:url('../font/control_panel.svg?38598288#control_panel') format('svg');}}[class^="icon-"]:before,[class*=" icon-"]:before{font-family:"control_panel";font-style:normal;font-weight:normal;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:0.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:0.2em;}h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{text-rendering:optimizelegibility;font-weight:500;}h1,.h1{font-size:2.5em;line-height:1.333em;font-family:Oswald, "Oswald", Helvetica, Arial, sans-serif;}h2,.h2{font-size:1.75em;line-height:1.4em;margin-bottom:0.375em;font-family:Oswald, "Oswald", Helvetica, Arial, sans-serif;}h3,.h3{font-size:1.125em;font-family:Oswald, "Oswald", Helvetica, Arial, sans-serif;}h3.section-head,.h3.section-head{margin-bottom:0;margin-top:0.5rem;}h4,.h4{font-size:1em;font-weight:700;margin:0.5em 0;}h5,.h5{font-size:0.846em;line-height:2.09em;text-transform:uppercase;letter-spacing:2px;}.icon-credential:before{content:'\61';/* 'a' */}.icon-user:before{content:'\63';/* 'c' */}.icon-download:before{content:'\64';/* 'd' */}.icon-edit:before{content:'\65';/* 'e' */}.icon-password:before{content:'\6b';/* 'k' */}.icon-link-ext:before{content:'\6c';/* 'l' */}.icon-email:before{content:'\6d';/* 'm' */}.icon-menu:before{content:'\6e';/* 'n' */}.icon-phone:before{content:'\70';/* 'p' */}.icon-search:before{content:'\73';/* 's' */}.icon-view:before{content:'\76';/* 'v' */}.icon-site:before{content:'\77';/* 'w' */}.icon-x:before{content:'\78';/* 'x' */}.icon-check:before{content:'\2713';/* '✓' */}.icon-reference:before{content:'\e800';/* '' */}.wrap{padding:0;}#container > header nav{width:100%;}#container > header nav #menu-main-navigation{width:100%;}#container > header nav #menu-main-navigation li{float:left;padding:1rem 1rem 1rem 0;}.entry-content .alignleft,.entry-content img.alignleft{margin-right:1.5em;display:inline;float:left;}.entry-content .alignright,.entry-content img.alignright{margin-left:1.5em;display:inline;float:right;}.entry-content .aligncenter,.entry-content img.aligncenter{margin-right:auto;margin-left:auto;display:block;clear:both;}#container > header nav #menu-main-navigation li{padding-top:0.5rem;}ul.search_results{max-width:250px;}.wrap{width:100%;padding:0;}.nav{border:0;}.nav ul{background:#181920;margin-top:0;}.nav li{float:left;position:relative;width:100%;}.nav li a{border-bottom:0;padding:1rem;}.nav li ul.sub-menu,.nav li ul.children{display:initial;transition:0.5s max-height cubic-bezier(0.3, 0, 0, 1.3);transition-delay:0.5s;z-index:8999;overflow:hidden;position:relative;left:0;top:0;max-height:0;float:left;margin:0;-webkit-box-shadow:0px 1px 2px 1px rgba(0, 0, 0, 0.12) inset;-moz-box-shadow:0px 1px 2px 1px rgba(0, 0, 0, 0.12) inset;box-shadow:0px 1px 2px 1px rgba(0, 0, 0, 0.12) inset;}.nav li ul.sub-menu li,.nav li ul.children li{background:black;}.nav li ul.sub-menu li:last-of-type a:before,.nav li ul.children li:last-of-type a:before{height:50%;}.nav li ul.sub-menu li a,.nav li ul.children li a{padding-left:2rem;border-right:0;display:block;width:100%;}.nav li ul.sub-menu li a:before,.nav li ul.children li a:before{content:"";display:block;position:absolute;left:0;top:0;border-right:1px solid #181920;width:1rem;height:100%;}.nav li ul.sub-menu li a:after,.nav li ul.children li a:after{content:"";width:1rem;position:absolute;left:1rem;top:50%;height:1px;border-bottom:1px solid #181920;box-sizing:border-box;}.nav li ul.sub-menu li:last-child a,.nav li ul.children li:last-child a{border-bottom:0;}.nav li ul.sub-menu li ul,.nav li ul.children li ul{top:0;left:100%;}.nav li:hover > ul{max-height:400px;}.sidebar{margin-top:2.2em;}.widgettitle{border-bottom:2px solid #444;margin-bottom:0.75em;}.widget{padding:0 10px;margin:2.2em 0;}.widget ul li{margin-bottom:0.75em;}.widget ul li ul{margin-top:0.75em;padding-left:1em;}.filter-list{padding-left:0.5rem;}.single-site .entry-content,.single-client .entry-content{padding:0;}.parent-category{display:block;}.wrap{width:100%;padding:0;}#logo{margin-bottom:0.75rem;}#header-search{margin:1rem 0;}

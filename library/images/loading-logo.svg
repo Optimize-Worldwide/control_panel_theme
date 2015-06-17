@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="400px" height="400px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+<!-- <rect width="400" height="400" fill="red"></rect> -->
+<g transform="translate(100,100)">
+	<circle cx="100" cy="100" fill="transparent" stroke-width="1" stroke="black">
+		<animate id="animation1" attributeName="r" from="0" to="200" dur="2s" begin="0s;animation2.end" />
+		<animate id="animation2" attributeName="r" from="200" to="0" dur="0s" begin="animation1.end" />
+
+		<animate id="animation3" attributeName="opacity" from="1" to="0" dur="2s" begin="0s;animation4.end" />
+		<animate id="animation4" attributeName="opacity" from="0" to="1" dur="0s" begin="animation3.end" />
+	</circle>
+	<g>
+		<path fill="#FFFFFF" d="M100,195.5c-52.659,0-95.5-42.841-95.5-95.5C4.5,47.341,47.341,4.5,100,4.5c52.659,0,95.5,42.841,95.5,95.5
+			C195.5,152.659,152.659,195.5,100,195.5z"/>
+		<path fill="#585951" d="M100,9c50.178,0,91,40.822,91,91s-40.822,91-91,91S9,150.178,9,100S49.822,9,100,9 M100,0
+			C44.771,0,0,44.771,0,100s44.771,100,100,100s100-44.771,100-100S155.229,0,100,0L100,0z"/>
+	</g>
+	<circle fill="#01AEF0" stroke="#00AEEF" stroke-width="38" stroke-miterlimit="10" cx="100" cy="100">
+		<animate id="animation5" attributeName="r" from="60" to="66.366" dur="2s" begin="0s;animation6.end" />
+		<animate id="animation6" attributeName="r" from="66.366" to="60" dur="2s" begin="animation5.end" />
+	</circle>
+	<g> <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="4s" repeatCount="indefinite"/>
+		<line fill="none" stroke="#FFFFFF" stroke-width="9" stroke-miterlimit="10" x1="107.719" y1="12.873" x2="91.662" y2="186.395"/>
+	</g>
+	<g>
+		<polygon fill="#58595B" points="100.524,154.111 94.658,146.504 94.117,146.473 88.224,152.782 55.008,149.186 66.471,43.277
+			89.731,45.794 80.698,129.249 80.966,129.61 84.802,130.025 85.231,129.68 94.259,46.281 115.815,48.617 106.788,132.013
+			107.134,132.442 110.971,132.856 111.31,132.562 120.325,49.266 143.606,51.605 133.09,148.758 124.395,156.697 	"/>
+		<path fill="#FFFFFF" d="M68.687,46.031l18.29,1.979l-8.87,81.941l1.502,2.026l5.954,0.644l2.042-1.644l8.87-81.942l16.585,1.797
+			l-8.869,81.94l1.644,2.043l5.955,0.644l1.899-1.658l8.854-81.801l18.306,1.84l-10.144,93.708l-7.164,6.541l-21.688-2.35
+			l-5.912-7.666l-2.851-0.166l-5.841,6.254l-29.488-3.193L68.687,46.031 M64.254,40.522l-0.538,4.971L52.791,146.431l-0.538,4.971
+			l4.971,0.538l29.488,3.193l2.485,0.27l1.707-1.827l3.314-3.549l3.676,4.768l1.302,1.688l2.12,0.229l21.688,2.35l2.243,0.243
+			l1.666-1.521l7.164-6.541l1.396-1.274l0.203-1.88l10.144-93.708l0.543-5.009l-5.014-0.504l-18.306-1.84l-4.493-0.452l0.019-0.174
+			l-4.971-0.538l-16.585-1.797l-4.971-0.539l0,0.003l-4.527-0.49l-18.29-1.979L64.254,40.522L64.254,40.522z"/>
+	</g>
+</g>
+</svg>

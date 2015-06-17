@@ -1,0 +1,126 @@
+.single-checklist {
+	progress {
+		width: 100%;
+	}
+	.previous-notes {
+		position: absolute;
+		left: -10rem;
+		top: 2rem;
+		width: 9rem;
+		display: block;
+		padding: 0;
+		text-align: right;
+		p.notes {
+			word-break: break-word;
+			padding-right: 0;
+		}
+	}
+	#main > article {
+		@include card;
+		overflow: visible;
+		background: white;
+		max-width: 40rem;
+		margin: $gutter auto;
+		padding: $gutter 4rem;
+	}
+	.article-header {
+		padding: $gutter 0;
+		float: left;
+		width: 100%;
+	}
+	.entry-content {
+		padding: 0;
+		width: 100%;
+		float: left;
+	}
+	#respond {
+		padding: $gutter 0;
+		width: 100%;
+		float: left;
+	}
+}
+
+.checklist-item {
+	float: left;
+	width: 100%;
+	position: relative;
+	header {
+		position: relative;
+		&:hover time {
+			opacity: 1;
+		}
+		input[type=checkbox] {
+			position: absolute;
+			right: 0;
+			top: 0px;
+			height: 2rem;
+			width: 2rem;
+		}
+	}
+	main {
+		// padding-left: 5rem;
+		position: relative;
+		min-height: 3rem;
+		section.fields {
+			margin: $gutter 0;
+		}
+	}
+	&.incomplete {
+		main {
+			display: none;
+		}
+	}
+	h2 {
+		margin-bottom: 0;
+	}
+	time {
+		position: absolute;
+		top: 0.5rem;
+		height: 1rem;
+		right: 2.5rem;
+		line-height: 1;
+		margin: 0;
+		opacity: 0;
+		transition: 0.5s opacity;
+	}
+	img {
+		float: left;
+		clear: left;
+		margin-right: $gutter;
+		left: 0;
+		width: 4rem;
+		height: auto;
+	}
+	.notes {
+		word-break: break-all;
+		padding-right: 3rem;
+	}
+	form {
+		position: relative;
+		float: left;
+		width: calc(100% - 5rem);
+		padding: 0;
+		margin: 0;
+	}
+	textarea {
+		background: $light-gray;
+		font-style: italic;
+		// padding: 0;
+		min-height: 4em;
+		height: auto;
+		margin-bottom: 0;
+		padding-right: 3em;
+		overflow: hidden;
+		// resize: none;
+	}
+	input[type=submit] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		-webkit-appearance: none;
+		border: none;
+		background: $gray;
+		height: 1.5em;
+		line-height: 1;
+	}
+}

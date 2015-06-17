@@ -1,0 +1,24 @@
+/******************************************************************
+Theme Name: Control Panel
+Theme URI: https://github.com/optimizeworldwide/control-panel
+Description: The theme that powers the Optimize Worldwide Control Panel. Built with <a href="https://github.com/eddiemachado/bones/" title="Bones">Bones</a>.
+Author: Tyler Shuster for Optimize Worldwide
+Author URI: http://optimizehere.co
+Version: 1.0
+Tags: fluid-layout, responsive-layout, project-management
+
+Notes:
+In order to get the MainWP extension to work on a locally-hosted machine:
+-edit plugins/mainwp/view/MainWPManageSitesView.view.php
+-at line 1086, comment out what is inside the if (function_exists('openssl_pkey_new')) function
+-replace it with the  $privkey = '-1';$pubkey = '-1'; from the else statement below it
+
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+Are You Serious? Yes.
+******************************************************************/
+
+.sticky {}          /* DO NOT EDIT THIS */
+.gallery-caption {} /* THESE ARE USELESS */
+.bypostauthor {}    /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
